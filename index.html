@@ -4,88 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vlam.ai</title>
-    <style>
-body {
-  width: 100%;
-  position: relative;
-  background-color: #000;
-  padding: 0;
-  margin: 0;
-}
-.mo-fire {
-  width: 200px;
-  height: auto;
-  position: absolute;
-  left:50%;
-  margin-left: -100px;
-  top: 100px;
-}
-.mo-fire svg {
-  width: 100%;
-  height: auto;
-  position: relative
-}
-.flame {
-  animation-name: flamefly;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  opacity: 0;
-  transform-origin: 50% 50% 0;
-}
-.flame.one {
-  animation-delay: 1s;
-  animation-duration: 3s;
-}
-.flame3.two{
-  animation-duration: 5s;
-  animation-delay: 1s;
-}
 
-.flame-main {
-  animation-name: flameWobble;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.flame-main.one {
-  animation-duration: 4s;
-  animation-delay: 1s;
-}
-.flame-main.two {
-  animation-duration: 3s;
-  animation-delay: 2s;
-}
-.flame-main.three {
-  animation-duration: 2.1s;
-  animation-delay: 3s;
-}
-.flame-main.four {
-  animation-duration: 3.2s;
-  animation-delay: 4s;
-}
-.flame-main.five {
-  animation-duration: 2.5s;
-  animation-delay: 5s;
-}
-@keyframes flameWobble {
-  50% {
-    transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
-  }
-}
-@keyframes flamefly {
-  0%{
-    transform: translate(0) rotate(180deg);
-  }
-   50% {
-     opacity: 1;
-  }
-  100% {
-    transform: translate(-20px, -100px) rotate(180deg);
-    opacity: 0;
-  }
-    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Apple Touch Icon (For iPhones & iPads) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+
+    <style>
+      body {
+        width: 100%;
+        position: relative;
+        background-color: #000;
+        padding: 0;
+        margin: 0;
+      }
+      .mo-fire {
+        width: 200px;
+        height: auto;
+        position: absolute;
+        left:50%;
+        margin-left: -100px;
+        top: 100px;
+      }
+      .mo-fire svg {
+        width: 100%;
+        height: auto;
+        position: relative
+      }
+      .flame {
+        animation-name: flamefly;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        opacity: 0;
+        transform-origin: 50% 50% 0;
+      }
+      .flame.one {
+        animation-delay: 1s;
+        animation-duration: 3s;
+      }
+      .flame3.two{
+        animation-duration: 5s;
+        animation-delay: 1s;
+      }
+
+      .flame-main {
+        animation-name: flameWobble;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      .flame-main.one {
+        animation-duration: 4s;
+        animation-delay: 1s;
+      }
+      .flame-main.two {
+        animation-duration: 3s;
+        animation-delay: 2s;
+      }
+      .flame-main.three {
+        animation-duration: 2.1s;
+        animation-delay: 3s;
+      }
+      .flame-main.four {
+        animation-duration: 3.2s;
+        animation-delay: 4s;
+      }
+      .flame-main.five {
+        animation-duration: 2.5s;
+        animation-delay: 5s;
+      }
+      @keyframes flameWobble {
+        50% {
+          transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+        }
+      }
+      @keyframes flamefly {
+        0%{
+          transform: translate(0) rotate(180deg);
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-20px, -100px) rotate(180deg);
+          opacity: 0;
+        }
+      }
+        </style>
 </head>
+
 <body>
 
 <div class="mo-fire">
